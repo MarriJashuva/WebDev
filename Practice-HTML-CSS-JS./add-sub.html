@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .content{
+       justify-content: center;
+       display: flex;
+    }
+    .btn{
+        padding: 3px 10px;
+        border: 1px solid whitesmoke;
+        border-radius: 5px;
+        background-color: aquamarine;
+    }
+    #num{
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <button onclick="Add()" class="btn">+</button>
+    <div id="num">0</div>
+    <button onclick="Sub()" class="btn">-</button>
+    </div>
+    <script>
+       let num=0;
+       function reflect(){
+        document.getElementById("num").innerHTML=num;
+       }
+       function Add(){
+         num++;
+         reflect();  
+       }
+       function Sub(){
+        num--;
+        reflect();
+       }
+    </script>
+</body>
+</html>
