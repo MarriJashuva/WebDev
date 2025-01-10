@@ -1,0 +1,102 @@
+<html>
+    <head>
+    <title>Images-flex</title>
+    <style>
+     .container{
+        background-color: rgb(100, 232, 232);
+        display: flex;
+        justify-content:center;
+        justify-content: space-around;
+        padding: 15px 5px;
+     }
+     body{
+        margin: 0;
+     }
+      
+     .sub-container img{
+      max-width: 350px;
+      max-height: 400px; 
+     }
+
+     .content{
+        text-align:center; 
+     }
+     .btn{
+        margin-left: 115px;
+     }
+    </style>
+    </head>
+    <body>
+      <div class="container">
+      <div class="sub-container">
+        <div>
+            <img src="Images/person.png"/>
+        </div>
+        <div class="content">
+            <br/>
+            Look deep into nature, and then you will <br/>understand everything better.
+        </div>
+        <div class="btn">
+            <br/>
+            <button onclick="button()">Click</button>
+        </div>
+      </div>    
+      <div class="sub-container">
+        <div>
+            <img src="Images/person.png"/>
+        </div>
+        <div class="content">
+            <br/>
+            Look deep into nature, and then you will <br/>understand everything better.
+        </div>
+        <div class="btn">
+            <br/>
+            <button onclick="button()">Click</button>
+        </div>
+      </div>
+      <div class="sub-container">
+        <div>
+            <img src="Images/person.png"/>
+        </div>
+        <div class="content">
+            <br/>
+            Look deep into nature, and then you will <br/>understand everything better.
+        </div>
+        <div class="btn">
+            <br/>
+            <button onclick="button()">Click</button>
+        </div>
+      </div>
+      <div class="sub-container"><div>
+        <img src="Images/person.png"/>
+    </div>
+    <div class="content">
+        <br/>
+        Look deep into nature, and then you will <br/>understand everything better.
+    </div>
+    <div class="btn">
+        <br/>
+        <button onclick="button()">Click</button>
+    </div>
+</div>
+      <div class="sub-container">
+        <div>
+            <img src="Images/person.png"/>
+        </div>
+        <div class="content">
+            <br/>
+            Look deep into nature, and then you will <br/>understand everything better.
+        </div>
+        <div class="btn">
+            <br/>
+            <button onclick="button()">Click</button>
+        </div>
+      </div>
+      </div>
+      <script>
+        function button(){
+            alert("Button clicked");
+        }
+      </script>
+    </body>
+</html>
