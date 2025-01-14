@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        .signin{
+            width: 50%;
+            display: flex;
+            background-color: brown;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: aliceblue;
+        }
+        .signup{
+            width: 50%;
+            background-color: blueviolet;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            color:white;
+        }
+        .signup p{
+            font-size: large;
+            margin-top: 0%;
+        }
+        .btn{
+            background-color: aqua;
+            border: 1px solid aqua;
+            padding: 7px 9px;
+            border-radius: 18px;
+            font-size: 12px;
+        }
+        .btn:hover{
+            background-color: aquamarine;
+            transition: 0.3s;
+            color: black;
+            padding: 7px 10px;
+        }
+        .btn1{
+            background-color: aqua;
+            border: 1px solid aqua;
+            padding: 7px 9px;
+            border-radius: 18px;
+            font-size: 12px;
+        }
+        .btn1:hover{
+            background-color: aquamarine;
+            transition: 0.3s;
+            color: black;
+            padding: 7px 10px;
+        }
+        input{
+            outline: none;
+            padding: 3px 7px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="signin">
+        <br/>
+          <form onsubmit="Login(event)">
+           <label for="name">Name : </label><input id="name" placeholder="Enter Your Name" required/>
+           <br/><br/>
+           <label for="email">Email : </label><input id="email" placeholder="Enter Your Email" required/>
+           <br/><br/>
+           <button class="btn" type="Submit">SIGN IN</button>
+          </form>
+       </div>
+       <div class="signup">
+           <h1 style="margin-top: 0%;">Hello Friends</h1>
+           <p>Enter Your Details And Start Your Journey With Us</p>
+           <button class="btn1" onclick="render()">SIGN UP</button>
+       </div>
+    </div>
+    <script>
+        function render(){
+            window.location.href="signup_form.html"
+        }
+        function Login(event){
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            if(name && email){
+                alert("Valid detailes");
+                window.location.href="home.html";
+            }
+            else{
+                alert("Please Enter detailes");
+            }
+        }
+    </script>
+</body>
+</html>
