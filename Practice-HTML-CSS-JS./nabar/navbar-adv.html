@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0%;
+        }
+        .image {
+            background-image: url('http://sfwallpaper.com/images/high-resolution-desktop-wallpaper-nature-17.jpg');
+            width: 100%; /* Full width */
+            height: 600px; /* Fixed height */
+            background-size: cover; /* Ensure the full image fits within the div */
+            background-repeat: no-repeat; /* Avoid tiling */
+            background-position: center; /* Center the image */
+        }
+        a{
+            text-decoration: none;
+            color: rgb(4, 0, 7);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .Container{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            background-color: rgba(159, 188, 225, 0.7); 
+            padding: 12px 12px;
+        }
+        .sub-container{
+            justify-content: space-between;
+            border-radius: 15px;
+            box-shadow: 0px 1px 1px 0px;
+            border: 1px solid #474646;
+            padding: 5px;
+            font-size: 13px
+        }
+        .sub-container:hover{
+            background-color: #c9bfbf;
+            border: 1px solid black;
+        }
+        a:hover{
+            color: rgb(21, 4, 250);
+        }
+    </style>
+</head>
+<body class="image">
+    <div class="Container">
+    <a style="padding: 5px;font-size: 14px;" href="#">Home</a>
+    <a style="padding: 5px;font-size: 14px;" href="#">About Us</a>
+    <a style="padding: 5px;font-size: 14px;" href="#">View More</a>
+    <a style="padding: 5px;font-size: 14px;" href="#">Contact</a>
+    <div class="sub-container">
+        <a href="#">SIGN IN</a>
+        <a href="#">SIGN UP</a>
+    </div>
+</div>
+</body>
+</html>
