@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blue;
+            padding: 5px 10px;
+            color: #fff;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .more {
+            display: none;
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 590px) {
+            .links {
+                position: absolute;
+                top: 30px;
+                left: 0;
+                flex-direction: column;
+                align-items: center;
+                background-color: blue;
+                width: 100%;
+                padding: 10px;
+                gap: 10px;
+                display: none; /* Hide by default */
+            }
+
+            .links a {
+                color: white; /* Consistent color */
+            }
+
+            .more {
+                display: block;
+            }
+
+            .links.show {
+                display: flex; /* Show when toggled */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="logo">LOGO</div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">View More</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="more">
+            <button class="btn" onclick="toggle()">More</button>
+        </div>
+    </div>
+    <script>
+        function toggle() {
+            const menu = document.querySelector('.links');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
